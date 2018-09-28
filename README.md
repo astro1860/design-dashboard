@@ -13,3 +13,7 @@ The web application can read the urban layout in .geojson format and conduct the
 This application is built with Flask framework. The other library I used include：
 - shapely.py: to perform geometrical calculation
 - d3.js: for front-end graph visualization
+
+### How to run application?
+go to the folder and run with 
+`python3 app.py`
