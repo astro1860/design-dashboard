@@ -1,0 +1,32 @@
+# clean .geojson file
+
+data_web = requests.get(url).text
+data_scenario = json.loads(data_web) #loaded data from web
+
+# convert to 2D geometrical data
+## 2dtopsurface, delete special, key save real height
+
+data_geo2d = []
+
+# load it with shapely shape module and save it in a list
+## e.g.
+data_shape = [
+{"geometry":{shape_obj},"level_h":15,"area":1000,"function":"residential","properties":{<diction>} },
+{"geometry":{shape_obj},"level_h":15,"area":3000,"function":"commercial","properties":{<diction>} },
+{"geometry":{shape_obj},"level_h":15,"area":3000,"function":"office","properties":{<diction>} }
+]
+
+# [METHOD1] USE POLYGON INTERSECTION
+# [METHOD2] GRID AND POINT METHOD
+
+# detect which polygons intersect
+for s1, shape1 in enumerate(data_shape):
+    for s2, shape2 in enumerate(data_shape):
+        if(shape1["geometry"].intersects(shape2["geometry"]) and s1>s2):
+            # need to consider only half of the matrix
+            intersect_id = [s1,s2]
+            intersect_area = shape1["geometry"].intersection(shape2["geometry"])
+            if f1 == f2:
+                vol = int_area * smaller_height
+
+            if f1!= f2:
