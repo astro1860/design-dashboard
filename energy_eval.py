@@ -1,13 +1,17 @@
 import json
 import requests
 import shapely
+from shapely.geometry import shape, Polygon,box
+from shapely.ops import cascaded_union
+import math
+from operator import itemgetter
 
 
 def energy_gpr_mix(url):
-    # energy demand per week Wh/m2/week
-    energy_res_u = 1300.655
-    energy_off_u = 3232.305
-    energy_com_u = 9210.615
+    # energy demand per year kWh/m2/year
+    energy_res_u = 67.634
+    energy_off_u = 168.132
+    energy_com_u = 478.952
     e_res = 0
     e_off = 0
     e_com = 0

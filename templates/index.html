@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Layouts &raquo; Two-and-One</title>
+  <title>Design Analysis</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
   <!-- Demo Dependencies -->
@@ -53,11 +53,12 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="https://keen.io">Home</a></li>
-          <li>
-            <a href="#" onclick="location.href=addr_design;return false;">Return to Design</a></li>
-          <li><a href="https://github.com/keenlabs/dashboards/tree/gh-pages/layouts/two-and-one">Source</a></li>
-          <li><a href="https://groups.google.com/forum/#!forum/keen-io-devs">Community</a></li><li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>
+          <!--<li><a href="https://keen.io">Home</a></li>-->
+          <li><a href="#" onclick="location.href=addr_design;return false;">Return to Design</a></li>
+
+          <li><a href="http://ia.arch.ethz.ch/cds/">Other Projects</a></li>
+          <li><a href="http://www.fcl.ethz.ch/research/responsive-cities/big-data-informed-urban-design.html">About</a></li>
+          <!--<li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>-->
         </ul>
       </div>
     </div>
@@ -77,7 +78,7 @@
               </div>
           </div>
           <div class="chart-notes">
-            How diverse your design layout afford
+            How diverse your design layout afford?
           </div>
         </div>
       </div>
@@ -89,15 +90,15 @@
           </div>
           <div class="chart-stage">
             <div id="chart-02">
-              <h4> The energy demands of your design is:
+              <h4> The energy demands of your design is:</h4>
                 <h3>
-                <p id="energy"></p>
-                kWh per week</h3>
-              </h4>
+                  <p id="energy"></p></h3>
+                <h4>kWh per year</h4>
+                <h3><p id="times"></p></h3><h4>% of the energy consumption of CBD area with the same size (200,000m2 with GPR = 15)</h4>
             </div>
           </div>
           <div class="chart-notes">
-            Notes go down here
+            What is the annual energy demand of your planning?
           </div>
         </div>
       </div>
@@ -112,10 +113,12 @@
           </div>
           <div class="chart-stage">
             <div id="chart-03">
-              <h4> The gross plot ratio of your design is:
+              <h4> The Gross Plot Ratio(GPR) of your design is:
                 <h3><p id="gpr"></p></h3>
               </h4>
-
+               <!--<h4> The Volume of your design is:-->
+                <!--<h3><p id="volume"></p></h3>-->
+              <!--</h4>-->
             </div>
           </div>
           <div class="chart-notes">
@@ -128,17 +131,23 @@
 
   </div>
   <div class="container-fluid">
-    <p class="small text-muted">Built with &#9829; by <a href="twitter.com/hangxinlu">Hangxin Lu</a></p>
+    <p class="small text-muted">Built with &#9829; by <a href="https://twitter.com/hangxinlu">Hangxin Lu</a></p>
   </div>
 
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript">
+    function setMoney(num){//取整，三行逗号隔开
+	return parseFloat(num).toLocaleString();
+     }
     var data = {{ data |tojson }};
     var energy = JSON.parse(data)[0]["energy"]
+    var energy_dis = setMoney(energy)
+    var times  = parseFloat(energy / 1435856000*100).toFixed(2);
     var gpr = JSON.parse(data)[0]["gpr"]
     console.log(energy,gpr)
-    document.getElementById("energy").innerHTML = energy;
+    document.getElementById("energy").innerHTML = energy_dis;
     document.getElementById("gpr").innerHTML = gpr;
+    document.getElementById("times").innerHTML = times;
   </script>
   <script type="text/javascript" src = "./static/js/mygraph.js"> </script>
   <!-- <script type="text/javascript" src = "./static/lib/js/keen.min.js"></script> -->

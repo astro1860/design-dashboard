@@ -1,8 +1,11 @@
 var w = 300, h = 400, r = 150
 console.log(data)
 data = JSON.parse(data)[0]["f_mixed"]
-color = d3.scale.category20c();     //builtin range of colors
-
+//color = d3.scale.category20c();     //builtin range of colors
+function colores_google(n) {
+  var colores_g =["#b24343","#f9bb52","#89a3c2"];
+  return colores_g[n];}
+//color = ["#9081ca","#89a3c2","#f9bb52"]
 var vis = d3.select("#chart-01")
           .append("svg:svg")
         .data([data])                   //associate our data with the document
@@ -24,7 +27,7 @@ var vis = d3.select("#chart-01")
                 .attr("class", "slice");    //allow us to style things in the slices (like text)
 
         arcs.append("svg:path")
-                .attr("fill", function(d, i) { return color(i); } ) //set the color for each slice to be chosen from the color function defined above
+                .attr("fill", function(d, i) { return colores_google(i); } ) //set the color for each slice to be chosen from the color function defined above
                 .attr("d", arc);                                    //this creates the actual SVG path using the associated data (pie) with the arc drawing function
 
         arcs.append("svg:text")                                     //add a label to each slice

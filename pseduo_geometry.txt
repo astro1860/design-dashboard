@@ -16,17 +16,30 @@ data_shape = [
 {"geometry":{shape_obj},"level_h":15,"area":3000,"function":"office","properties":{<diction>} }
 ]
 
-# [METHOD1] USE POLYGON INTERSECTION
-# [METHOD2] GRID AND POINT METHOD
 
-# detect which polygons intersect
-for s1, shape1 in enumerate(data_shape):
-    for s2, shape2 in enumerate(data_shape):
-        if(shape1["geometry"].intersects(shape2["geometry"]) and s1>s2):
-            # need to consider only half of the matrix
-            intersect_id = [s1,s2]
-            intersect_area = shape1["geometry"].intersection(shape2["geometry"])
-            if f1 == f2:
-                vol = int_area * smaller_height
+# [METHOD1] USE R-TREE for polygons
+s = STRtree(data_shape)
+for this_polygon in data_shape:
+    polys_intersect = s.query(this_polygon) #which polygon"s" intersect with this current one
+    # polys_intersect=[B,C], this_polygon = [A]
+    for poc, poly in enumearte(polys_intersect):
+        new_poly = this_polygon.intersection(poly)
+        #new_poly:[AB,AC] + poly:[B,C]
 
-            if f1!= f2:
+
+
+# [METHOD2] USE R-TREE for grid Space
+grids = box(small_polygons) [{box_1},{box_2},...,{box_n}]
+idx = r_tree(grids)
+for id in idx:
+from shapely.geometry import box, Polygon
+for pixel in pixels:
+    # say the pixel has llx, lly, urx, ury values.
+    pixel_shape = box(llx, lly, urx, ury)
+
+    for polygon in approximately_overlapping:
+        # say the polygon has a ``value`` and a 2-D array of coordinates
+        # [[x0,y0],...] named ``xy``.
+        polygon_shape = Polygon(xy)
+        ## add value to the pixel and detect how many time a pixel is added
+        pixel_value += polygon_shape.intersection(pixel_shape).area * value
