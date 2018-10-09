@@ -89,13 +89,13 @@
             Energy Demand
           </div>
           <div class="chart-stage">
-            <div id="chart-02">
+            <div id="chart-02"></div>
               <h4> The energy demands of your design is:</h4>
                 <h3>
                   <p id="energy"></p></h3>
                 <h4>kWh per year</h4>
                 <h3><p id="times"></p></h3><h4>% of the energy consumption of CBD area with the same size (200,000m2 with GPR = 15)</h4>
-            </div>
+            // HERE USED TO BE A DIV FOR CHART
           </div>
           <div class="chart-notes">
             What is the annual energy demand of your planning?
@@ -112,7 +112,7 @@
             Plot ratio
           </div>
           <div class="chart-stage">
-            <div id="chart-03">
+            <div id="chart-02">
               <h4> The Gross Plot Ratio(GPR) of your design is:
                 <h3><p id="gpr"></p></h3>
               </h4>
@@ -140,6 +140,7 @@
 	return parseFloat(num).toLocaleString();
      }
     var data = {{ data |tojson }};
+    console.log(data)
     var energy = JSON.parse(data)[0]["energy"]
     var energy_dis = setMoney(energy)
     var times  = parseFloat(energy / 1435856000*100).toFixed(2);
