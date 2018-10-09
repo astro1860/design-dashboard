@@ -17,3 +17,10 @@ This application is built with Flask framework. The other library I used include
 ### How to run application?
 go to the folder and run with 
 `python3 app.py`
+
+### TODO 
+- front-end using interactive d3.js visualization
+- deploy server at ETH Zurich
+- web interface 4 - 6 part to show students
+- flexibile self-defined block: other block & open space
+- formulate exercise and SEND TASK
