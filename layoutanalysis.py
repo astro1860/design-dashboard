@@ -299,19 +299,25 @@ def layoutanalysis(url):
     # print("Total Volume is:", volume)
     # print("GPR is:", round(volume/site_box.area,2))
     # print("commercial,residential,office,com_off,off_res,com_res,all")
+    ccode = ["#b24343","#f9bb52","#89a3c2","#6c4c87","#3d8677","#e499bd","#bfbfbf"]
 
-    occ = [{"name": "Residential", "freq": volume1res},
-           {"name": "Office", "freq": volume1off},
-           {"name": "Commercial", "freq": volume1com},
-           {"name": "Residential&Commercial","freq":volume2com_res},
-           {"name": "Commercial&Office","freq":volume2com_off},
-           {"name": "Residential&Office","freq":volume2res_off}
+    occ = [{"name": "Residential", "freq": volume1res, "color":ccode[0]},
+           {"name": "Office", "freq": volume1off,"color":ccode[1]},
+           {"name": "Commercial", "freq": volume1com,"color":ccode[2]},
+           {"name": "Mixed:RC","freq":volume2com_res,"color":ccode[3]},
+           {"name": "Mixed:CO","freq":volume2com_off,"color":ccode[4]},
+           {"name": "Mixed:RO","freq":volume2res_off,"color":ccode[5]},
+           {"name": "Mixed:COR", "freq": volume3,"color":ccode[6]}
            ]
+
+    #occ = [item for item in occ if item["freq"]!= 0]
+
+    func_mix = [occ_item for occ_item in occ if occ_item["freq"]!=0]
 
     energy_demand= res_energy+com_energy+off_energy
     gpr = floor_area/20000
     construction = len(polys_design)
 
-    data = [{"f_mixed": occ, "energy": energy_demand, "gpr": gpr,"construction":construction, "floor_area":floor_area, "res_population":res_density,"total_volume":t_volume}]
+    data = [{"f_mixed": func_mix, "energy": energy_demand, "gpr": gpr,"construction":construction, "floor_area":floor_area, "res_population":res_density,"total_volume":t_volume}]
     print(data)
     return data

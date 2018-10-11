@@ -324,4 +324,5 @@ construction = len(polys_design)
 
 # make as the json object/array so that can pass it to .js
 data = [{"f_mixed": occ, "energy": energy_demand, "gpr": gpr,"construction":construction, "floor_area":floor_area, "res_population":res_density,"total_volume":t_volume}]
-print(data)
+#print(data)
+print([item["name"] for item in occ])

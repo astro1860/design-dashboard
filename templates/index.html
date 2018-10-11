@@ -31,6 +31,16 @@
   addr_design = addr_design.substring(0, addr_design.length - 8)
   // need to delete the geomtery and make the reture
 </script> -->
+<!--<style>-->
+<!--.arc path {-->
+  <!--stroke: #fff;-->
+<!--}-->
+
+<!--.legend rect {-->
+  <!--fill:white;-->
+  <!--stroke:black;}-->
+
+<!--</style>-->
 <body class="keen-dashboard" style="padding-top: 80px;">
   <script type="text/javascript">
     var addr_design = {{ addr_design|tojson }}
@@ -95,7 +105,6 @@
                   <p id="energy"></p></h3>
                 <h4>kWh per year</h4>
                 <h3><p id="times"></p></h3><h4>% of the energy consumption of CBD area with the same size (200,000m2 with GPR = 15)</h4>
-            // HERE USED TO BE A DIV FOR CHART
           </div>
           <div class="chart-notes">
             What is the annual energy demand of your planning?
@@ -150,7 +159,9 @@
     document.getElementById("gpr").innerHTML = gpr;
     document.getElementById("times").innerHTML = times;
   </script>
+  <script type="text/javascript" src="./static/js/d3.legend.js"></script>
   <script type="text/javascript" src = "./static/js/mygraph.js"> </script>
+
   <!-- <script type="text/javascript" src = "./static/lib/js/keen.min.js"></script> -->
 
 </body>

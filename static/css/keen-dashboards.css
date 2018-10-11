@@ -70,3 +70,10 @@
 .keen-dashboard .chart-stage .chart-title {
   border: medium none;
 }
+.arc path {
+  stroke: #fff;
+}
+
+.legend rect {
+  fill:white;
+  stroke:white;}

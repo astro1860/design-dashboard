@@ -83,7 +83,7 @@ def counter(url):
     blocks = []
     for name in block_set:
         blocks.append({"name": name, "freq":block_list.count(name)})
-    #print(blocks)
+    # print(blocks)
 
     # for name in block_set:
     #     block_freq[name] = block_list.count(name)
