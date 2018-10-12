@@ -1,8 +1,10 @@
 //import d3.legend from './d3.legend.js';
 
-var w = 300, h = 400, r = 150
-console.log(data)
-data = JSON.parse(data)[0]["f_mixed"]
+////var w = 200, h = 200, r = 100
+//console.log(data)
+f_data = JSON.parse(data)[0]["f_mixed"]
+energy_data = JSON.parse(data)[0]["energy_data"]
+console.log("energy",energy_data)
 //color = d3.scale.category20c();     //builtin range of colors
 //function colores_google(n) {
 //  var colores_g =["#b24343","#f9bb52","#89a3c2","#e499bd","#e499bd","#bbc89c","#bbc89d"];
@@ -19,10 +21,87 @@ data = JSON.parse(data)[0]["f_mixed"]
 // chart for first ONE!
 
 //
-//[{"name": "Residential", "freq": 32833.68709945883, "color": "#b24343"}, {"name": "Office", "freq": 31359.608256387335, "color": "#f9bb52"}, {"name": "Commercial", "freq": 52024.76024980958, "color": "#89a3c2"}, {"name": "Mixed:RC", "freq": 18893.813638854423, "color": "#6c4c87"}, {"name": "Mixed:CO", "freq": 2236.485401068858, "color": "#3d8677"}, {"name": "Mixed:RO", "freq": 1157.8477008918603, "color": "#e499bd"}, {"name": "Mixed:COR", "freq": 14754.024532770425, "color": "#bfbfbf"}]
-//var vis = d3.select("#chart-03")
+  //sort bars based on value
+data = energy_data.sort(function (a, b) {
+    return d3.ascending(a.value, b.value);
+})
+
+//set up svg using margin conventions - we'll need plenty of room on the left for labels
+var margin = {
+    top: 15,
+    right: 60,
+    bottom: 15,
+    left: 100
+};
+
+var w = 500 - margin.left - margin.right,
+    h = 200 - margin.top - margin.bottom;
+
+var svg = d3.select("#chart-02").append("svg")
+    .attr("width", w + margin.left + margin.right)
+    .attr("height", h + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var x = d3.scale.linear()
+    .range([0, w])
+    .domain([0, d3.max(data, function (d) {
+        return d.value;
+    })]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([h, 0], .1)
+    .domain(data.map(function (d) {
+        return d.name;
+    }));
+
+//make y axis to show bar names
+var yAxis = d3.svg.axis()
+    .scale(y)
+    //no tick marks
+    .tickSize(0)
+    .orient("left");
+
+var gy = svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+
+var bars = svg.selectAll(".bar")
+    .data(data)
+    .enter()
+    .append("g")
+
+//append rects
+bars.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return y(d.name);
+    })
+    .attr("height", y.rangeBand())
+    .attr("x", 0)
+    .style("fill", function(d) { return d.color; })
+    .attr("width", function (d) {
+        return x(d.value);
+    });
+
+//add a value label to the right of each bar
+bars.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return y(d.name) + y.rangeBand() / 2 + 4;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return 10;
+    })
+    .text(function (d) {
+        return parseFloat(d.value.toFixed(0)).toLocaleString();
+    });
+////examples
+//var vis = d3.select("#chart-02")
 //          .append("svg:svg")
-//        .data([data])                   //associate our data with the document
+//        .data([area_data])                   //associate our data with the document
 //            .attr("width", w)           //set the width and height of our visualization (these will be attributes of the <svg> tag
 //            .attr("height", h)
 //        .append("svg:g")                //make a group to hold our pie chart
@@ -33,7 +112,7 @@ data = JSON.parse(data)[0]["f_mixed"]
 //
 //    var pie = d3.layout.pie()           //this will create arc data for us given a list of values
 //        //.value(function(d) { return d.freq; });    //we must tell it out to access the value of each element in our data array
-//         .value(function(d) { return d.freq; });
+//         .value(function(d) { return d.value; });
 //
 //    var arcs = vis.selectAll("g.slice")     //this selects all <g> elements with class slice (there aren't any yet)
 //        .data(pie)                          //associate the generated pie data (an array of arcs, each having startAngle, endAngle and value properties)
@@ -56,9 +135,9 @@ data = JSON.parse(data)[0]["f_mixed"]
 //            .text(function(d, i) { return data[i].name; });        //get the label from our original data array
 
 // test with legend
-var width = 400,
-    height = 300,
-    radius = Math.min(width, height) / 3;
+var width = 500,
+    height = 200,
+    radius = Math.min(width, height) / 2;
 
 //var color = d3.scale.ordinal()
 //    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
@@ -71,7 +150,7 @@ var svg = d3.select("#chart-01").append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")
-     .data([data])
+     .data([f_data])
      .attr("transform", "translate(" + radius + "," + radius + ")")
    // .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
@@ -79,7 +158,7 @@ var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.freq; });
 
-var piefreq = data.map(a => a.freq);
+var piefreq = f_data.map(a => a.freq);
 console.log(piefreq)
 
 var g = svg.selectAll(".arc")
@@ -87,7 +166,7 @@ var g = svg.selectAll(".arc")
       .enter().append("g")
       .attr("class", "arc");
 
-console.log(pie(data))
+console.log(pie(f_data))
 
   g.append("path")
       .attr("d", arc)
@@ -106,7 +185,7 @@ console.log(pie(data))
     legend = svg.append("g")
     .attr("class", "legend")
     .attr("transform", "translate(" + legx + ", 0)")
-    .style("font-size", "12px")
+    .style("font-size", "14px")
     .call(d3.legend);
 
 

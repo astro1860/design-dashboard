@@ -24,28 +24,16 @@
   <!-- Dashboard -->
   <link rel="stylesheet" type="text/css" href="./static/css/keen-dashboards.css" />
 
-
 </head>
-<!-- <script type="text/javascript">
-  var addr_design = {{ addr_design|tojson }}
-  addr_design = addr_design.substring(0, addr_design.length - 8)
-  // need to delete the geomtery and make the reture
-</script> -->
-<!--<style>-->
-<!--.arc path {-->
-  <!--stroke: #fff;-->
-<!--}-->
 
-<!--.legend rect {-->
-  <!--fill:white;-->
-  <!--stroke:black;}-->
-
-<!--</style>-->
 <body class="keen-dashboard" style="padding-top: 80px;">
   <script type="text/javascript">
     var addr_design = {{ addr_design|tojson }}
-    addr_design = addr_design.substring(0, addr_design.length - 8)
-    //document.getElementById("return").setAttribute("href",addr_design)
+
+    add = addr_design.substring(0, addr_design.length - 8)
+    add_preview = add + 'preview'
+    add_text = add + 'info'
+
   </script>
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -59,14 +47,15 @@
         <a class="navbar-brand" href="../">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="navbar-brand" href="./">Your Design Dashboard</a>
+        <a class="navbar-brand" href="./">Design Dashboard</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
           <!--<li><a href="https://keen.io">Home</a></li>-->
-          <li><a href="#" onclick="location.href=addr_design;return false;">Return to Design</a></li>
+          <li><a href="#" onclick="location.href=add;return false;">Return to Design</a></li>
 
-          <li><a href="http://ia.arch.ethz.ch/cds/">Other Projects</a></li>
+          <li><a href="http://ia.arch.ethz.ch/cds/">Research</a></li>
+          <li><a href="https://github.com/astro1860/design-dashboard">GITHUB</a></li>
           <li><a href="http://www.fcl.ethz.ch/research/responsive-cities/big-data-informed-urban-design.html">About</a></li>
           <!--<li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>-->
         </ul>
@@ -84,11 +73,10 @@
           </div>
           <div class="chart-stage">
               <div id="chart-01">
-
               </div>
           </div>
           <div class="chart-notes">
-            How diverse your design layout afford?
+            <p id="f_percent"></p>
           </div>
         </div>
       </div>
@@ -100,47 +88,76 @@
           </div>
           <div class="chart-stage">
             <div id="chart-02"></div>
-              <h4> The energy demands of your design is:</h4>
-                <h3>
-                  <p id="energy"></p></h3>
-                <h4>kWh per year</h4>
-                <h3><p id="times"></p></h3><h4>% of the energy consumption of CBD area with the same size (200,000m2 with GPR = 15)</h4>
+
           </div>
           <div class="chart-notes">
-            What is the annual energy demand of your planning?
+            What is the annual energy demand(kWh) of your planning per functional type?
           </div>
         </div>
       </div>
 
     </div>
+
     <div class="row">
 
-      <div class="col-sm-12">
+        <div class="col-sm-6">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Plot ratio
+            Design Description
           </div>
           <div class="chart-stage">
-            <div id="chart-02">
-              <h4> The Gross Plot Ratio(GPR) of your design is:
-                <h3><p id="gpr"></p></h3>
-              </h4>
-               <!--<h4> The Volume of your design is:-->
-                <!--<h3><p id="volume"></p></h3>-->
+            <div id="chart-03"></div>
+             <img id="preview" src="" alt="preview" height="300" width="300">
+              <h5>Design Idea</h5>
+              <p id="design_info"></p>
+          </div>
+          <div class="chart-notes">
+            Geometrical and textual design information
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Design Statistics
+          </div>
+          <div class="chart-stage">
+            <div id="chart-04">
+              <p>
+
+                Major Function:<h3 id="f_name"></h3>
+              Annual Energy Demand (kWh per year): <h3 id="energy"></h3>
+              Number of Building Constructed: <h3 id="n_con"></h3>
+              Floor Area (square meters): <h3 id="floor"></h3>
+              Residential Population: <h3 id="population"></h3>
+              Gross Plot Ratio(GPR):<h3 id="gpr"></h3>
+
+
+              </p>
+              <!--<h5> The energy demands of your design is:</h5>-->
+                <!--<h3>-->
+                  <!--<p id="energy"></p></h3>-->
+                <!--<h4>kWh per year</h4>-->
+                <!--<h3><p id="times"></p></h3><h4>% of the energy consumption of CBD area with the same size (200,000m2 with GPR = 15)</h4>-->
+              <!--<h4> The Gross Plot Ratio(GPR) of your design is:-->
+                <!--<h3><p id="gpr"></p></h3>-->
+                <!--Number of building constructed, floor area, gross plot ratio, Volume-->
               <!--</h4>-->
             </div>
           </div>
           <div class="chart-notes">
-            GPR, number of buildings used, etc.
+            Diverse urban design and planning related index
           </div>
         </div>
       </div>
 
-    </div>
+   </div>
+
 
   </div>
   <div class="container-fluid">
-    <p class="small text-muted">Built with &#9829; by <a href="https://twitter.com/hangxinlu">Hangxin Lu</a></p>
+    <p class="small text-muted">(Beta) Built with &#9829; by <a href="https://github.com/astro1860/design-dashboard">Hangxin Lu</a></p>
   </div>
 
   <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -148,16 +165,48 @@
     function setMoney(num){//取整，三行逗号隔开
 	return parseFloat(num).toLocaleString();
      }
+
     var data = {{ data |tojson }};
-    console.log(data)
-    var energy = JSON.parse(data)[0]["energy"]
-    var energy_dis = setMoney(energy)
+
+    var energy = JSON.parse(data)[0]["energy"];
+    var energy_dis = setMoney(Math.ceil(energy));
     var times  = parseFloat(energy / 1435856000*100).toFixed(2);
-    var gpr = JSON.parse(data)[0]["gpr"]
-    console.log(energy,gpr)
+    var gpr = JSON.parse(data)[0]["gpr"].toFixed(2);
+    var f_percent = JSON.parse(data)[0]["f_percent"]
+
+    var ff_data = JSON.parse(data)[0]["f_mixed"];
+    var max_name = JSON.parse(data)[0]["max_name"];
+
+    f_percent.toString();
+
+    console.log(f_name);
+    document.getElementById("f_name").innerHTML = max_name;
+    document.getElementById("f_percent").innerHTML = f_percent;
+
+
+    var vol = setMoney(Math.ceil(JSON.parse(data)[0]["total_volume"]));
+    var n_con = JSON.parse(data)[0]["construction"];
+    var floor = setMoney(Math.floor(JSON.parse(data)[0]["floor_area"]));
+    var population = setMoney(Math.floor(JSON.parse(data)[0]["res_population"]));
+
+
+
+    var desc = {{ desc |tojson }};
+    console.log(desc)
+
+    document.getElementById("n_con").innerHTML = n_con;
+    document.getElementById("floor").innerHTML = floor;
+    document.getElementById("population").innerHTML = population;
+
+
+
     document.getElementById("energy").innerHTML = energy_dis;
     document.getElementById("gpr").innerHTML = gpr;
-    document.getElementById("times").innerHTML = times;
+    document.getElementById("design_info").innerHTML = desc;
+    document.getElementById("preview").src = add_preview;
+
+
+
   </script>
   <script type="text/javascript" src="./static/js/d3.legend.js"></script>
   <script type="text/javascript" src = "./static/js/mygraph.js"> </script>

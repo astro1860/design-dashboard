@@ -77,3 +77,25 @@
 .legend rect {
   fill:white;
   stroke:white;}
+
+
+
+
+
+  .bar {
+
+          }
+
+          .axis {
+              font-size: 14px;
+          }
+
+          .axis path,
+          .axis line {
+              fill: none;
+              display: none;
+          }
+
+          .label {
+              font-size: 10px;
+          }

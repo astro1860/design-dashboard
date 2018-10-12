@@ -12,7 +12,7 @@ def layoutanalysis(url):
 # s = [45,90,135]
     s = [15,30,45]
     # Prepare data of area and designdata
-    url = "https://qua-kit.ethz.ch/exercise/33/1686/geometry" # This is the geojson data to read as example
+    # url = "https://qua-kit.ethz.ch/exercise/33/1686/geometry" # This is the geojson data to read as example
     file = requests.get(url).text
     b = json.loads(file)  # load: convert json --> python list
     polys_design = []
@@ -138,7 +138,7 @@ def layoutanalysis(url):
         if h_max != 0.1:
             h_grid = h_max
             area = i_area[h_id]
-            print(area)
+            #print(area)
             #area = gsize*gsize
             gfa += area * h_grid/3
             volume += area * h_grid
@@ -149,8 +149,8 @@ def layoutanalysis(url):
 
         if v_check != {}:
             garea = area
-            print("areas:", i_area)
-            print(volume4all)
+            #print("areas:", i_area)
+            #print(volume4all)
             for key, all_height in volume4all.items():
                 segment =[]
                 for val in all_height:
@@ -161,7 +161,7 @@ def layoutanalysis(url):
                     elif val == 90:
                         segment.extend(["s1", "s2", "s3"])
                 volume4all[key] = segment
-            print("update",volume4all)
+            #print("update",volume4all)
             # volume4all = {"com":[s1,s2,s3,s1],"res":[s1,s2],"off":[s1]}
 
             # 最底层
@@ -180,7 +180,7 @@ def layoutanalysis(url):
             s3_off = volume4all["off"].count("s3")
             s3_count = s3_com+s3_res+s3_off
 
-            print("count",s1_count,s2_count,s3_count)
+            #print("count",s1_count,s2_count,s3_count)
 
             #BOTOM LAYER
             # 一种相交
@@ -285,10 +285,11 @@ def layoutanalysis(url):
     unit_com = 478.952
 
     res_energy = res_sqm * unit_res
-    com_energy = res_sqm * unit_res
-    off_energy = res_sqm* unit_off
+    com_energy = com_sqm * unit_res
+    off_energy = off_sqm* unit_off
 
     res_density = res_sqm*16 /1000 # singapore sqm per person
+
     # print("sqm (res,com,off)is:", res_sqm, com_sqm, off_sqm)
     # print("energy (res,com,off) is:", res_energy,com_energy,off_energy)
     # print("resident population is", res_density)
@@ -304,20 +305,41 @@ def layoutanalysis(url):
     occ = [{"name": "Residential", "freq": volume1res, "color":ccode[0]},
            {"name": "Office", "freq": volume1off,"color":ccode[1]},
            {"name": "Commercial", "freq": volume1com,"color":ccode[2]},
-           {"name": "Mixed:RC","freq":volume2com_res,"color":ccode[3]},
-           {"name": "Mixed:CO","freq":volume2com_off,"color":ccode[4]},
-           {"name": "Mixed:RO","freq":volume2res_off,"color":ccode[5]},
-           {"name": "Mixed:COR", "freq": volume3,"color":ccode[6]}
+           {"name": "Commercial&Residential","freq":volume2com_res,"color":ccode[3]},
+           {"name": "Commercial&Office","freq":volume2com_off,"color":ccode[4]},
+           {"name": "Residential&Office","freq":volume2res_off,"color":ccode[5]},
+           {"name": "Commercial&Residential&Office", "freq": volume3,"color":ccode[6]}
            ]
 
-    #occ = [item for item in occ if item["freq"]!= 0]
+
 
     func_mix = [occ_item for occ_item in occ if occ_item["freq"]!=0]
 
     energy_demand= res_energy+com_energy+off_energy
+
     gpr = floor_area/20000
+
     construction = len(polys_design)
 
-    data = [{"f_mixed": func_mix, "energy": energy_demand, "gpr": gpr,"construction":construction, "floor_area":floor_area, "res_population":res_density,"total_volume":t_volume}]
+    def dic_key(dic):
+        return dic['freq']
+    max_name = max(func_mix,key=dic_key)["name"]
+    #print("largest1:",max_name)
+
+
+    energy_data = [{"name":"Residential","value":res_energy,"color":ccode[0]},
+                   {"name":"Office","value": off_energy,"color":ccode[1]},
+                   {"name":"Commercial","value": com_energy,"color":ccode[2]}]
+
+    area_data = [{"name":"Residential","value":res_sqm,"color":ccode[0]},
+                 {"name":"Office","value": off_sqm,"color":ccode[1]},
+                 {"name":"Commercial","value": com_sqm,"color":ccode[2]}]
+
+
+    f_percent = ["{:.2%}".format(x["freq"]/floor_area) for x in func_mix]
+    print(f_percent)
+
+
+    data = [{"f_mixed": func_mix,"max_name":max_name,"f_percent": f_percent, "energy_data":energy_data,"area_data":area_data,"energy":energy_demand,"gpr": gpr,"construction":construction,"floor_area":floor_area,"res_population":res_density,"total_volume":t_volume}]
     print(data)
     return data
