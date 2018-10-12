@@ -76,7 +76,7 @@
               </div>
           </div>
           <div class="chart-notes">
-            <p id="f_percent"></p>
+            With percentage of <p id="f_percent"></p>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
 
           </div>
           <div class="chart-notes">
-            What is the annual energy demand(kWh) of your planning per functional type?
+            <p id="times"></p>times of the energy demand of CBD area with the same size
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@
               <p>
 
                 Major Function:<h3 id="f_name"></h3>
-              Annual Energy Demand (kWh per year): <h3 id="energy"></h3>
+              Annual Total Energy Demand (kWh per year): <h3 id="energy"></h3>
               Number of Building Constructed: <h3 id="n_con"></h3>
               Floor Area (square meters): <h3 id="floor"></h3>
               Residential Population: <h3 id="population"></h3>
@@ -170,7 +170,7 @@
 
     var energy = JSON.parse(data)[0]["energy"];
     var energy_dis = setMoney(Math.ceil(energy));
-    var times  = parseFloat(energy / 1435856000*100).toFixed(2);
+    var times  = parseFloat(energy / 1435856000*100).toFixed(1);
     var gpr = JSON.parse(data)[0]["gpr"].toFixed(2);
     var f_percent = JSON.parse(data)[0]["f_percent"]
 
@@ -197,6 +197,7 @@
     document.getElementById("n_con").innerHTML = n_con;
     document.getElementById("floor").innerHTML = floor;
     document.getElementById("population").innerHTML = population;
+    document.getElementById("times").innerHTML = times;
 
 
 
@@ -204,6 +205,7 @@
     document.getElementById("gpr").innerHTML = gpr;
     document.getElementById("design_info").innerHTML = desc;
     document.getElementById("preview").src = add_preview;
+
 
 
 
