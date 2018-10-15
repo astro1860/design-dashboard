@@ -337,9 +337,9 @@ def layoutanalysis(url):
 
 
     f_percent = ["{:.2%}".format(x["freq"]/floor_area) for x in func_mix]
-    print(f_percent)
+    # print(f_percent)
 
 
     data = [{"f_mixed": func_mix,"max_name":max_name,"f_percent": f_percent, "energy_data":energy_data,"area_data":area_data,"energy":energy_demand,"gpr": gpr,"construction":construction,"floor_area":floor_area,"res_population":res_density,"total_volume":t_volume}]
-    print(data)
+    # print(data)
     return data
