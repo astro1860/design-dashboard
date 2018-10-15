@@ -280,15 +280,15 @@ def layoutanalysis(url):
     com_sqm += volume1com
     off_sqm += volume1off
 
-    unit_res= 67.634
-    unit_off = 168.132
-    unit_com = 478.952
+    unit_res= 0.13 #67.634
+    unit_off = 0.32 # 168.132
+    unit_com = 0.92 # 478.952
 
     res_energy = res_sqm * unit_res
     com_energy = com_sqm * unit_res
     off_energy = off_sqm* unit_off
 
-    res_density = res_sqm*16 /1000 # singapore sqm per person
+    res_density = res_sqm*4 /1000 # assume for 1000m2 building, each floor hold max. 4 unit houses
 
     # print("sqm (res,com,off)is:", res_sqm, com_sqm, off_sqm)
     # print("energy (res,com,off) is:", res_energy,com_energy,off_energy)
@@ -317,7 +317,7 @@ def layoutanalysis(url):
 
     energy_demand= res_energy+com_energy+off_energy
 
-    gpr = floor_area/20000
+    gpr = floor_area/200000
 
     construction = len(polys_design)
 
