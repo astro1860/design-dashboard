@@ -305,10 +305,10 @@ def layoutanalysis(url):
     occ = [{"name": "Residential", "freq": volume1res, "color":ccode[0]},
            {"name": "Office", "freq": volume1off,"color":ccode[1]},
            {"name": "Commercial", "freq": volume1com,"color":ccode[2]},
-           {"name": "Commercial&Residential","freq":volume2com_res,"color":ccode[3]},
-           {"name": "Commercial&Office","freq":volume2com_off,"color":ccode[4]},
-           {"name": "Residential&Office","freq":volume2res_off,"color":ccode[5]},
-           {"name": "Commercial&Residential&Office", "freq": volume3,"color":ccode[6]}
+           {"name": "Mixed: Commercial&Residential","freq":volume2com_res,"color":ccode[3]},
+           {"name": "Mixed: Commercial&Office","freq":volume2com_off,"color":ccode[4]},
+           {"name": "Mixed: Residential&Office","freq":volume2res_off,"color":ccode[5]},
+           {"name": "Mixed: Commercial&Residential&Office", "freq": volume3,"color":ccode[6]}
            ]
 
 

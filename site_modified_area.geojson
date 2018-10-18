@@ -1,0 +1,1866 @@
+{
+  "name": "Exercise_test",
+  "srid": 4326,
+  "properties": {
+    "defaultActiveColor": "#d3d3d3ff",
+    "defaultBlockColor": "#999999ff",
+    "defaultLineColor": "#005599ff",
+    "defaultStaticColor": "#999999ff",
+    "selectedStaticColor":"#d3d3d3ff",
+    "selectedDynamicColor":"#d3d3d3ff",
+    "defaultLineColor":"#3f3f3fff",
+    "evaluationCellSize": 0.5,
+    "hiddenProperties": [
+      "defaultActiveColor",
+      "defaultBlockColor",
+      "defaultLineColor",
+      "defaultStaticColor",
+      "selectedDynamicColor",
+      "evaluationCellSize",
+      "mapUrl",
+      "mapZoomLevel",
+      "useMapLayer",
+      "viewDistance",
+      "geomID",
+      "groupID",
+      "nondeletable",
+      "viewColor",
+      "SurfaceShape",
+      "FootprintArea(m2)",
+      "nameID",
+      "previewImgUrl",
+      "selectedStaticColor"
+    ],
+    "mapUrl": "https://api.mapbox.com/styles/v1/ludovica88/cjcijwvr60gdc2so0l600sn7u/tiles/256/${z}/${x}/${y}?access_token=pk.eyJ1IjoibHVkb3ZpY2E4OCIsImEiOiJjaWhwbXd5dmUwM3l2dHNtNDJ2bmdmZjNxIn0.ik8356RFyS2rIvWGHP5QDg",
+    "mapZoomLevel": 17,
+    "useMapLayer": true,
+    "previewImgUrl": "https://ideasfortanjongpagar.com/wp-content/uploads/2017/11/shawn-ang-454786.jpg",
+    "viewDistance": 3500
+  },
+  "geometry":
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 1,
+          "viewColor": "#b24343",
+          "height": 15,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "s_1o_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 20,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83204996585849,
+                1.271104542795369
+              ],
+              [
+                103.83189976215364,
+                1.2711018612463592
+              ],
+              [
+                103.83190244436265,
+                1.2708283432349035
+              ],
+              [
+                103.83219748735429,
+                1.2708310247841679
+              ],
+              [
+                103.83219212293628,
+                1.2711072243443664
+              ],
+              [
+                103.83204996585849,
+                1.271104542795369
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 2,
+          "viewColor": "#b24343",
+          "height": 45,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "M_1o_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 60,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ],
+              [
+                103.83339375257495,
+                1.271150129127711
+              ],
+              [
+                103.83339643478395,
+                1.2708766111213443
+              ],
+              [
+                103.8336914777756,
+                1.2708792926705832
+              ],
+              [
+                103.83368611335757,
+                1.271155492225591
+              ],
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 3,
+          "viewColor": "#b24343",
+          "height": 90,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "T_1o_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 120,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ],
+              [
+                103.83457928895955,
+                1.271195715459277
+              ],
+              [
+                103.83458197116857,
+                1.2709221974577574
+              ],
+              [
+                103.83487701416021,
+                1.2709248790069454
+              ],
+              [
+                103.8348716497422,
+                1.2712010785570806
+              ],
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 4,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3I",
+          "nameID": "s_3I_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 60,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 5,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3I",
+          "nameID": "m_3l_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 180,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83296191692354,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.269951476473408
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 6,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3I",
+          "nameID": "T_3I_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 360,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83447468280795,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.269972928874813
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 7,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3L",
+          "nameID": "s_3L_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 60,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ],
+              [
+                103.83184343576431,
+                1.2690772909656143
+              ],
+              [
+                103.83214116096495,
+                1.269079972516698
+              ],
+              [
+                103.83213579654694,
+                1.2688064542912545
+              ],
+              [
+                103.83244156837462,
+                1.2688144989453578
+              ],
+              [
+                103.83242815732956,
+                1.2693668984672173
+              ],
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 8,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3L",
+          "nameID": "m_3L_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 180,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ],
+              [
+                103.83431106805804,
+                1.269184553007014
+              ],
+              [
+                103.83460879325868,
+                1.2691872345579704
+              ],
+              [
+                103.83460342884067,
+                1.2689137163438753
+              ],
+              [
+                103.83490920066835,
+                1.2689217609976606
+              ],
+              [
+                103.83489578962329,
+                1.2694741604965945
+              ],
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 9,
+          "viewColor": "#b24343",
+          "SurfaceShape": "3L",
+          "nameID": "T_3L_R",
+          "name": "Residential",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i0.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Residential.jpg?fit=1024%2C654&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 360,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ],
+              [
+                103.83305579423906,
+                1.2692060054147674
+              ],
+              [
+                103.83335351943968,
+                1.2692086869657238
+              ],
+              [
+                103.83334815502167,
+                1.2689351687538803
+              ],
+              [
+                103.83365392684935,
+                1.2689432134075893
+              ],
+              [
+                103.8336405158043,
+                1.2694956129019561
+              ],
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 10,
+          "viewColor": "#89a3c2",
+          "height": 15,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "s_1o_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83204996585849,
+                1.271104542795369
+              ],
+              [
+                103.83189976215364,
+                1.2711018612463592
+              ],
+              [
+                103.83190244436265,
+                1.2708283432349035
+              ],
+              [
+                103.83219748735429,
+                1.2708310247841679
+              ],
+              [
+                103.83219212293628,
+                1.2711072243443664
+              ],
+              [
+                103.83204996585849,
+                1.271104542795369
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 11,
+          "viewColor": "#89a3c2",
+          "height": 45,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "M_1o_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ],
+              [
+                103.83339375257495,
+                1.271150129127711
+              ],
+              [
+                103.83339643478395,
+                1.2708766111213443
+              ],
+              [
+                103.8336914777756,
+                1.2708792926705832
+              ],
+              [
+                103.83368611335757,
+                1.271155492225591
+              ],
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 12,
+          "viewColor": "#89a3c2",
+          "height": 90,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "T_1o_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ],
+              [
+                103.83457928895955,
+                1.271195715459277
+              ],
+              [
+                103.83458197116857,
+                1.2709221974577574
+              ],
+              [
+                103.83487701416021,
+                1.2709248790069454
+              ],
+              [
+                103.8348716497422,
+                1.2712010785570806
+              ],
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 13,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3I",
+          "nameID": "s_3I_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 14,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3I",
+          "nameID": "m_3l_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83296191692354,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.269951476473408
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 15,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3I",
+          "nameID": "T_3I_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83447468280795,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.269972928874813
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 16,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3L",
+          "nameID": "s_3L_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ],
+              [
+                103.83184343576431,
+                1.2690772909656143
+              ],
+              [
+                103.83214116096495,
+                1.269079972516698
+              ],
+              [
+                103.83213579654694,
+                1.2688064542912545
+              ],
+              [
+                103.83244156837462,
+                1.2688144989453578
+              ],
+              [
+                103.83242815732956,
+                1.2693668984672173
+              ],
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 17,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3L",
+          "nameID": "m_3L_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ],
+              [
+                103.83431106805804,
+                1.269184553007014
+              ],
+              [
+                103.83460879325868,
+                1.2691872345579704
+              ],
+              [
+                103.83460342884067,
+                1.2689137163438753
+              ],
+              [
+                103.83490920066835,
+                1.2689217609976606
+              ],
+              [
+                103.83489578962329,
+                1.2694741604965945
+              ],
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 18,
+          "viewColor": "#89a3c2",
+          "SurfaceShape": "3L",
+          "nameID": "T_3L_C",
+          "name": "Commercial",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/commercial.jpg?fit=948%2C800&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ],
+              [
+                103.83305579423906,
+                1.2692060054147674
+              ],
+              [
+                103.83335351943968,
+                1.2692086869657238
+              ],
+              [
+                103.83334815502167,
+                1.2689351687538803
+              ],
+              [
+                103.83365392684935,
+                1.2689432134075893
+              ],
+              [
+                103.8336405158043,
+                1.2694956129019561
+              ],
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 19,
+          "viewColor": "#f9bb52",
+          "height": 15,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "s_1o_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83204996585849,
+                1.271104542795369
+              ],
+              [
+                103.83189976215364,
+                1.2711018612463592
+              ],
+              [
+                103.83190244436265,
+                1.2708283432349035
+              ],
+              [
+                103.83219748735429,
+                1.2708310247841679
+              ],
+              [
+                103.83219212293628,
+                1.2711072243443664
+              ],
+              [
+                103.83204996585849,
+                1.271104542795369
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 20,
+          "viewColor": "#f9bb52",
+          "height": 45,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "M_1o_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ],
+              [
+                103.83339375257495,
+                1.271150129127711
+              ],
+              [
+                103.83339643478395,
+                1.2708766111213443
+              ],
+              [
+                103.8336914777756,
+                1.2708792926705832
+              ],
+              [
+                103.83368611335757,
+                1.271155492225591
+              ],
+              [
+                103.83354395627978,
+                1.2711528106766574
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 21,
+          "viewColor": "#f9bb52",
+          "height": 90,
+          "special": "template",
+          "visible": "false",
+          "SurfaceShape": "1o",
+          "nameID": "T_1o_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 1000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ],
+              [
+                103.83457928895955,
+                1.271195715459277
+              ],
+              [
+                103.83458197116857,
+                1.2709221974577574
+              ],
+              [
+                103.83487701416021,
+                1.2709248790069454
+              ],
+              [
+                103.8348716497422,
+                1.2712010785570806
+              ],
+              [
+                103.83472949266441,
+                1.2711983970081724
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 22,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3I",
+          "nameID": "s_3I_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2699300240718632
+              ],
+              [
+                103.83267492055894,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2702062237283689
+              ],
+              [
+                103.83179247379304,
+                1.2699300240718632
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 23,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3I",
+          "nameID": "m_3l_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83296191692354,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.269951476473408
+              ],
+              [
+                103.83384436368945,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.2702276761276237
+              ],
+              [
+                103.83296191692354,
+                1.269951476473408
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 24,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3I",
+          "nameID": "T_3I_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83447468280795,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.269972928874813
+              ],
+              [
+                103.83535712957385,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.270249128526726
+              ],
+              [
+                103.83447468280795,
+                1.269972928874813
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 15,
+          "geomID": 25,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3L",
+          "nameID": "s_3L_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 5
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ],
+              [
+                103.83184343576431,
+                1.2690772909656143
+              ],
+              [
+                103.83214116096495,
+                1.269079972516698
+              ],
+              [
+                103.83213579654694,
+                1.2688064542912545
+              ],
+              [
+                103.83244156837462,
+                1.2688144989453578
+              ],
+              [
+                103.83242815732956,
+                1.2693668984672173
+              ],
+              [
+                103.83184611797333,
+                1.2693561722640276
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 45,
+          "geomID": 26,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3L",
+          "nameID": "m_3L_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ],
+              [
+                103.83431106805804,
+                1.269184553007014
+              ],
+              [
+                103.83460879325868,
+                1.2691872345579704
+              ],
+              [
+                103.83460342884067,
+                1.2689137163438753
+              ],
+              [
+                103.83490920066835,
+                1.2689217609976606
+              ],
+              [
+                103.83489578962329,
+                1.2694741604965945
+              ],
+              [
+                103.83431375026706,
+                1.2694634342938502
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "visible": "false",
+          "special": "template",
+          "height": 90,
+          "geomID": 27,
+          "viewColor": "#f9bb52",
+          "SurfaceShape": "3L",
+          "nameID": "T_3L_P",
+          "name": "Office",
+          "comments": "I place it here because",
+          "previewImgUrl": "https://i1.wp.com/ideasfortanjongpagar.com/wp-content/uploads/2017/11/Office.jpg?fit=1512%2C789&amp;ssl=1",
+          "FootprintArea(m2)": 3000,
+          "ResidentialUnit": 0,
+          "Level": 30
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ],
+              [
+                103.83305579423906,
+                1.2692060054147674
+              ],
+              [
+                103.83335351943968,
+                1.2692086869657238
+              ],
+              [
+                103.83334815502167,
+                1.2689351687538803
+              ],
+              [
+                103.83365392684935,
+                1.2689432134075893
+              ],
+              [
+                103.8336405158043,
+                1.2694956129019561
+              ],
+              [
+                103.83305847644806,
+                1.2694848866993007
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "viewColor": "#FFFFFFEE",
+          "geomID": 28,
+          "special": "forcedArea",
+          "height": 0,
+          "nameID": "site",
+          "name": "DesignSite",
+          "FootprintArea(m2)": 200000
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83183807134628,
+                1.2703671167185944
+              ],
+              [
+                103.8318970799446,
+                1.2672618802402698
+              ],
+              [
+                103.83215457201005,
+                1.267422773413568
+              ],
+              [
+                103.83620738983153,
+                1.2675300355235533
+              ],
+              [
+                103.83607864379883,
+                1.2713271113517184
+              ],
+              [
+                103.83180856704712,
+                1.2711447660298694
+              ],
+              [
+                103.83183807134628,
+                1.2703671167185944
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "VivoCity",
+          "height": 15,
+          "nondeletable": "true",
+          "geomID": 32,
+          "viewColor": "",
+          "previewImgUrl": "http://www.mapletreecommercialtrust.com/~/media/Our%20Portfolio/Singapore/VivoCity/vivocity_front.jpg",
+          "nameID": "vivo"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.82250130176544,
+                1.265164904967928
+              ],
+              [
+                103.81997466087341,
+                1.2651702680781993
+              ],
+              [
+                103.81995320320128,
+                1.264692951220194
+              ],
+              [
+                103.81987810134888,
+                1.2646768618863522
+              ],
+              [
+                103.81986737251282,
+                1.264483789872704
+              ],
+              [
+                103.81994783878328,
+                1.2644891529843876
+              ],
+              [
+                103.81992101669312,
+                1.2635452451573916
+              ],
+              [
+                103.81967961788177,
+                1.2635666976118098
+              ],
+              [
+                103.81968498229982,
+                1.2632020058625129
+              ],
+              [
+                103.81978690624237,
+                1.2631885980766377
+              ],
+              [
+                103.81978154182434,
+                1.2630679280006305
+              ],
+              [
+                103.81986737251282,
+                1.2630840173444213
+              ],
+              [
+                103.82078468799591,
+                1.2630840173444213
+              ],
+              [
+                103.82080078125,
+                1.2635935131795912
+              ],
+              [
+                103.82093489170076,
+                1.2635559713846134
+              ],
+              [
+                103.82099390029909,
+                1.2632020058625129
+              ],
+              [
+                103.82314503192902,
+                1.2632395476625922
+              ],
+              [
+                103.82349371910095,
+                1.2632180952054641
+              ],
+              [
+                103.82365465164185,
+                1.263502340247995
+              ],
+              [
+                103.82363319396974,
+                1.2636471443143267
+              ],
+              [
+                103.82350444793701,
+                1.2636471443143267
+              ],
+              [
+                103.82353127002716,
+                1.2637222279010887
+              ],
+              [
+                103.82353663444518,
+                1.2643550751889787
+              ],
+              [
+                103.82359027862549,
+                1.2644355218670689
+              ],
+              [
+                103.82351517677307,
+                1.265127363195685
+              ],
+              [
+                103.8225120306015,
+                1.265046916539032
+              ],
+              [
+                103.82250130176544,
+                1.265164904967928
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "height": 20,
+          "name": "FurnitureBuilding",
+          "geomID": 33,
+          "viewColor": "",
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.8329216837883,
+                1.2720001800017668
+              ],
+              [
+                103.8329216837883,
+                1.2716408525371292
+              ],
+              [
+                103.83330792188643,
+                1.271651578730828
+              ],
+              [
+                103.83330523967741,
+                1.2719840907133686
+              ],
+              [
+                103.83361369371414,
+                1.2719894538095056
+              ],
+              [
+                103.8336083292961,
+                1.272051129414343
+              ],
+              [
+                103.8329190015793,
+                1.2720350401262754
+              ],
+              [
+                103.8329216837883,
+                1.2720001800017668
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "height": 10,
+          "name": "Terminal Engineering",
+          "geomID": 34,
+          "viewColor": "",
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83381485939026,
+                1.271882191884565
+              ],
+              [
+                103.83383631706238,
+                1.2713753792288718
+              ],
+              [
+                103.83493065834045,
+                1.2714263286537886
+              ],
+              [
+                103.83490920066833,
+                1.2719304597513372
+              ],
+              [
+                103.83381485939026,
+                1.271882191884565
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "geomID": 35,
+          "name": "Terminal Engineering Office",
+          "height": 20,
+          "nondeletable": "true",
+          "Level": "",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83378267288208,
+                1.2720645371543293
+              ],
+              [
+                103.83379340171814,
+                1.2719224151069408
+              ],
+              [
+                103.83488774299622,
+                1.2719733645210565
+              ],
+              [
+                103.8348850607872,
+                1.2721154865656332
+              ],
+              [
+                103.83378267288208,
+                1.2720645371543293
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "height": 8,
+          "name": "Empire Complex PSA(Office)",
+          "viewColor": "",
+          "geomID": 36,
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83498162031174,
+                1.272102078825914
+              ],
+              [
+                103.83500307798386,
+                1.2713887869723695
+              ],
+              [
+                103.83529543876648,
+                1.2714075578131616
+              ],
+              [
+                103.83527666330338,
+                1.2721074419218095
+              ],
+              [
+                103.83498162031174,
+                1.272102078825914
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Distripark(Commercial)",
+          "height": 8,
+          "geomID": 37,
+          "viewColor": "",
+          "nondeletable": "true",
+          "Level": "",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.83593380451202,
+                1.2720699002503009
+              ],
+              [
+                103.83594989776611,
+                1.2715979477618886
+              ],
+              [
+                103.837371468544,
+                1.2716623049244888
+              ],
+              [
+                103.83735805749893,
+                1.27212621275736
+              ],
+              [
+                103.83593380451202,
+                1.2720699002503009
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "height": 8,
+          "name": "Distripark (Commercial)",
+          "geomID": 38,
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.8375860452652,
+                1.272139620496952
+              ],
+              [
+                103.83760750293732,
+                1.2716676680212873
+              ],
+              [
+                103.83902639150618,
+                1.2717400698271388
+              ],
+              [
+                103.83900761604308,
+                1.2721905699067801
+              ],
+              [
+                103.8375860452652,
+                1.272139620496952
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "TanjongPagar Complex",
+          "height": 9,
+          "geomID": 39,
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.84185075759888,
+                1.2723460996779083
+              ],
+              [
+                103.84183466434479,
+                1.2719867722614497
+              ],
+              [
+                103.84275197982788,
+                1.2720135877420202
+              ],
+              [
+                103.84275734424591,
+                1.2723460996779083
+              ],
+              [
+                103.84185075759888,
+                1.2723460996779083
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "TanjongPagar Complex",
+          "height": 60,
+          "geomID": 40,
+          "special": "",
+          "nondeletable": "true",
+          "nameID": "exbuilding"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.8424676656723,
+                1.272136938949049
+              ],
+              [
+                103.84246230125427,
+                1.2716703495696866
+              ],
+              [
+                103.84219944477081,
+                1.2714236471051477
+              ],
+              [
+                103.84237110614775,
+                1.271225212496974
+              ],
+              [
+                103.84271442890166,
+                1.271600629310364
+              ],
+              [
+                103.84268760681152,
+                1.2721530282364801
+              ],
+              [
+                103.8424676656723,
+                1.272136938949049
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

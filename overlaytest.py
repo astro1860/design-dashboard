@@ -12,7 +12,7 @@ from operator import itemgetter
 s = [15,30,45]
 # def volume(url):
 # Prepare data of area and designdata
-url = "https://qua-kit.ethz.ch/exercise/33/1686/geometry" # This is the geojson data to read as example
+url = "https://qua-kit.ethz.ch/exercise/34/3451/geometry" # This is the geojson data to read as example
 file = requests.get(url).text
 b = json.loads(file)  # load: convert json --> python list
 polys_design = []
@@ -41,25 +41,26 @@ for i, f in enumerate(b["geometry"]["features"]):
                 polys_design.append({"Polygon": xy_poly, "function": p["name"], "height": h_bound})
             # ceilings
 
-    if p["nameID"] == "site":
-        #print("site area boundary is:")
+    if p["geomID"] == 28: #This is the site area id
+        print(p)
+        print("site area boundary is:")
         boundx=[]
         boundy=[]
         for faces in f["geometry"]["coordinates"]:
             #print(faces)
             boundx.extend([face[0] for face in faces[0]])
             boundy.extend([face[1] for face in faces[0]])
-        # print(boundx)
+        print(boundx)
         xmin=min(boundx)
         xmax=max(boundx)
         ymin=min(boundy)
         ymax=max(boundy)
         site = [xmin, xmax, ymin, ymax]
-        #print(site)
+        print(site)
 
-#print(polys_design)
+print(polys_design)
 site_box = box(xmin,ymin,xmax,ymax)
-#print(site_box.area) # wrong surface calcuation in the 3d geometry data
+print(site_box.area) # wrong surface calcuation in the 3d geometry data
 
 # create grid
 gsize = 10
