@@ -41,7 +41,7 @@ def layoutanalysis(url):
                     polys_design.append({"Polygon": xy_poly, "function": p["name"], "height": h_bound})
                 # ceilings
 
-        if p["nameID"] == "site":
+        if p["name"] == "DesignSite":
             #print("site area boundary is:")
             boundx=[]
             boundy=[]
