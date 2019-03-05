@@ -1,0 +1,1356 @@
+{
+  "name": "Exercise_test",
+  "srid": 4326,
+  "properties": {
+    "defaultActiveColor": "#d3d3d3ff",
+    "defaultBlockColor": "#999999ff",
+    "defaultLineColor": "#005599ff",
+    "defaultStaticColor": "#999999ff",
+    "selectedStaticColor":"#d3d3d3ff",
+    "selectedDynamicColor":"#d3d3d3ff",
+    "defaultLineColor":"#3f3f3fff",
+    "evaluationCellSize": 0.5,
+    "hiddenProperties": [
+      "defaultActiveColor",
+      "defaultBlockColor",
+      "defaultStaticColor",
+      "evaluationCellSize",
+      "mapUrl",
+      "mapZoomLevel",
+      "useMapLayer",
+      "viewDistance",
+      "height",
+      "geomID",
+      "groupID",
+      "objectID",
+      "static",
+      "nondeletable",
+      "viewColor",
+      "previewImgUrl",
+      "SurfaceShape",
+      "nameID",
+      "defaultLineColor",
+      "selectedDynamicColor",
+      "selectedStaticColor"
+    ],
+    "mapZoomLevel": 15,
+    "mapUrl": "https://api.mapbox.com/styles/v1/hangxin/cjam7un6bddok2smiueuqmm4g/tiles/256/${z}/${x}/${y}@2x?access_token=pk.eyJ1IjoiaGFuZ3hpbiIsImEiOiJjaWhzMDY2NmwwMDJnd2hrcHlhdmNrYXJwIn0.lvcRGHAaG_E6jlXZ0li70A",
+    "useMapLayer": true,
+    "viewDistance": 4000
+  },
+  "geometry":
+  {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 1,
+        "viewColor": "#b24343",
+        "height": 15,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "small",
+        "SurfaceShape": "1o",
+        "nameID": "s_1o_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83204996585849,
+              1.271104542795369
+            ],
+            [
+              103.83189976215364,
+              1.2711018612463592
+            ],
+            [
+              103.83190244436265,
+              1.2708283432349035
+            ],
+            [
+              103.83219748735429,
+              1.2708310247841679
+            ],
+            [
+              103.83219212293628,
+              1.2711072243443664
+            ],
+            [
+              103.83204996585849,
+              1.271104542795369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 2,
+        "viewColor": "#b24343",
+        "height": 45,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "medium",
+        "SurfaceShape": "1o",
+        "nameID": "M_1o_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ],
+            [
+              103.83339375257495,
+              1.271150129127711
+            ],
+            [
+              103.83339643478395,
+              1.2708766111213443
+            ],
+            [
+              103.8336914777756,
+              1.2708792926705832
+            ],
+            [
+              103.83368611335757,
+              1.271155492225591
+            ],
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 3,
+        "viewColor": "#b24343",
+        "height": 90,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "tall",
+        "SurfaceShape": "1o",
+        "nameID": "T_1o_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ],
+            [
+              103.83457928895955,
+              1.271195715459277
+            ],
+            [
+              103.83458197116857,
+              1.2709221974577574
+            ],
+            [
+              103.83487701416021,
+              1.2709248790069454
+            ],
+            [
+              103.8348716497422,
+              1.2712010785570806
+            ],
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 4,
+        "viewColor": "#b24343",
+        "HeightLevel": "small",
+        "SurfaceShape": "3I",
+        "nameID": "s_3I_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 5,
+        "viewColor": "#b24343",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3I",
+        "nameID": "m_3l_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83296191692354,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.269951476473408
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 6,
+        "viewColor": "#b24343",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3I",
+        "nameID": "T_3I_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83447468280795,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.269972928874813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 7,
+        "viewColor": "#b24343",
+        "HeightLevel": "small",
+        "SurfaceShape": "3L",
+        "nameID": "s_3L_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ],
+            [
+              103.83184343576431,
+              1.2690772909656143
+            ],
+            [
+              103.83214116096495,
+              1.269079972516698
+            ],
+            [
+              103.83213579654694,
+              1.2688064542912545
+            ],
+            [
+              103.83244156837462,
+              1.2688144989453578
+            ],
+            [
+              103.83242815732956,
+              1.2693668984672173
+            ],
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 8,
+        "viewColor": "#b24343",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3L",
+        "nameID": "m_3L_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ],
+            [
+              103.83431106805804,
+              1.269184553007014
+            ],
+            [
+              103.83460879325868,
+              1.2691872345579704
+            ],
+            [
+              103.83460342884067,
+              1.2689137163438753
+            ],
+            [
+              103.83490920066835,
+              1.2689217609976606
+            ],
+            [
+              103.83489578962329,
+              1.2694741604965945
+            ],
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 9,
+        "viewColor": "#b24343",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3L",
+        "nameID": "T_3L_R",
+        "name": "Residential",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ],
+            [
+              103.83305579423906,
+              1.2692060054147674
+            ],
+            [
+              103.83335351943968,
+              1.2692086869657238
+            ],
+            [
+              103.83334815502167,
+              1.2689351687538803
+            ],
+            [
+              103.83365392684935,
+              1.2689432134075893
+            ],
+            [
+              103.8336405158043,
+              1.2694956129019561
+            ],
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 10,
+        "viewColor": "#89a3c2",
+        "height": 15,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "small",
+        "SurfaceShape": "1o",
+        "nameID": "s_1o_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83204996585849,
+              1.271104542795369
+            ],
+            [
+              103.83189976215364,
+              1.2711018612463592
+            ],
+            [
+              103.83190244436265,
+              1.2708283432349035
+            ],
+            [
+              103.83219748735429,
+              1.2708310247841679
+            ],
+            [
+              103.83219212293628,
+              1.2711072243443664
+            ],
+            [
+              103.83204996585849,
+              1.271104542795369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 11,
+        "viewColor": "#89a3c2",
+        "height": 45,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "medium",
+        "SurfaceShape": "1o",
+        "nameID": "M_1o_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ],
+            [
+              103.83339375257495,
+              1.271150129127711
+            ],
+            [
+              103.83339643478395,
+              1.2708766111213443
+            ],
+            [
+              103.8336914777756,
+              1.2708792926705832
+            ],
+            [
+              103.83368611335757,
+              1.271155492225591
+            ],
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 12,
+        "viewColor": "#89a3c2",
+        "height": 90,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "tall",
+        "SurfaceShape": "1o",
+        "nameID": "T_1o_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ],
+            [
+              103.83457928895955,
+              1.271195715459277
+            ],
+            [
+              103.83458197116857,
+              1.2709221974577574
+            ],
+            [
+              103.83487701416021,
+              1.2709248790069454
+            ],
+            [
+              103.8348716497422,
+              1.2712010785570806
+            ],
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 13,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "small",
+        "SurfaceShape": "3I",
+        "nameID": "s_3I_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 14,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3I",
+        "nameID": "m_3l_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83296191692354,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.269951476473408
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 15,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3I",
+        "nameID": "T_3I_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83447468280795,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.269972928874813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 16,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "small",
+        "SurfaceShape": "3L",
+        "nameID": "s_3L_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ],
+            [
+              103.83184343576431,
+              1.2690772909656143
+            ],
+            [
+              103.83214116096495,
+              1.269079972516698
+            ],
+            [
+              103.83213579654694,
+              1.2688064542912545
+            ],
+            [
+              103.83244156837462,
+              1.2688144989453578
+            ],
+            [
+              103.83242815732956,
+              1.2693668984672173
+            ],
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 17,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3L",
+        "nameID": "m_3L_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ],
+            [
+              103.83431106805804,
+              1.269184553007014
+            ],
+            [
+              103.83460879325868,
+              1.2691872345579704
+            ],
+            [
+              103.83460342884067,
+              1.2689137163438753
+            ],
+            [
+              103.83490920066835,
+              1.2689217609976606
+            ],
+            [
+              103.83489578962329,
+              1.2694741604965945
+            ],
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 18,
+        "viewColor": "#89a3c2",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3L",
+        "nameID": "T_3L_C",
+        "name": "Commercial",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ],
+            [
+              103.83305579423906,
+              1.2692060054147674
+            ],
+            [
+              103.83335351943968,
+              1.2692086869657238
+            ],
+            [
+              103.83334815502167,
+              1.2689351687538803
+            ],
+            [
+              103.83365392684935,
+              1.2689432134075893
+            ],
+            [
+              103.8336405158043,
+              1.2694956129019561
+            ],
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 19,
+        "viewColor": "#f9bb52",
+        "height": 15,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "small",
+        "SurfaceShape": "1o",
+        "nameID": "s_1o_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83204996585849,
+              1.271104542795369
+            ],
+            [
+              103.83189976215364,
+              1.2711018612463592
+            ],
+            [
+              103.83190244436265,
+              1.2708283432349035
+            ],
+            [
+              103.83219748735429,
+              1.2708310247841679
+            ],
+            [
+              103.83219212293628,
+              1.2711072243443664
+            ],
+            [
+              103.83204996585849,
+              1.271104542795369
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 20,
+        "viewColor": "#f9bb52",
+        "height": 45,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "medium",
+        "SurfaceShape": "1o",
+        "nameID": "M_1o_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ],
+            [
+              103.83339375257495,
+              1.271150129127711
+            ],
+            [
+              103.83339643478395,
+              1.2708766111213443
+            ],
+            [
+              103.8336914777756,
+              1.2708792926705832
+            ],
+            [
+              103.83368611335757,
+              1.271155492225591
+            ],
+            [
+              103.83354395627978,
+              1.2711528106766574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geomID": 21,
+        "viewColor": "#f9bb52",
+        "height": 90,
+        "special": "template",
+        "visible": "false",
+        "HeightLevel": "tall",
+        "SurfaceShape": "1o",
+        "nameID": "T_1o_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 1000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ],
+            [
+              103.83457928895955,
+              1.271195715459277
+            ],
+            [
+              103.83458197116857,
+              1.2709221974577574
+            ],
+            [
+              103.83487701416021,
+              1.2709248790069454
+            ],
+            [
+              103.8348716497422,
+              1.2712010785570806
+            ],
+            [
+              103.83472949266441,
+              1.2711983970081724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 22,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "small",
+        "SurfaceShape": "3I",
+        "nameID": "s_3I_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2699300240718632
+            ],
+            [
+              103.83267492055894,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2702062237283689
+            ],
+            [
+              103.83179247379304,
+              1.2699300240718632
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 23,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3I",
+        "nameID": "m_3l_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83296191692354,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.269951476473408
+            ],
+            [
+              103.83384436368945,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.2702276761276237
+            ],
+            [
+              103.83296191692354,
+              1.269951476473408
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 24,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3I",
+        "nameID": "T_3I_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83447468280795,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.269972928874813
+            ],
+            [
+              103.83535712957385,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.270249128526726
+            ],
+            [
+              103.83447468280795,
+              1.269972928874813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 15,
+        "geomID": 25,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "small",
+        "SurfaceShape": "3L",
+        "nameID": "s_3L_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ],
+            [
+              103.83184343576431,
+              1.2690772909656143
+            ],
+            [
+              103.83214116096495,
+              1.269079972516698
+            ],
+            [
+              103.83213579654694,
+              1.2688064542912545
+            ],
+            [
+              103.83244156837462,
+              1.2688144989453578
+            ],
+            [
+              103.83242815732956,
+              1.2693668984672173
+            ],
+            [
+              103.83184611797333,
+              1.2693561722640276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 45,
+        "geomID": 26,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "medium",
+        "SurfaceShape": "3L",
+        "nameID": "m_3L_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ],
+            [
+              103.83431106805804,
+              1.269184553007014
+            ],
+            [
+              103.83460879325868,
+              1.2691872345579704
+            ],
+            [
+              103.83460342884067,
+              1.2689137163438753
+            ],
+            [
+              103.83490920066835,
+              1.2689217609976606
+            ],
+            [
+              103.83489578962329,
+              1.2694741604965945
+            ],
+            [
+              103.83431375026706,
+              1.2694634342938502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "visible": "false",
+        "special": "template",
+        "height": 90,
+        "geomID": 27,
+        "viewColor": "#f9bb52",
+        "HeightLevel": "tall",
+        "SurfaceShape": "3L",
+        "nameID": "T_3L_P",
+        "name": "Office",
+        "comments": "I place it here because",
+        "SurfaceArea(m2)": 3000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ],
+            [
+              103.83305579423906,
+              1.2692060054147674
+            ],
+            [
+              103.83335351943968,
+              1.2692086869657238
+            ],
+            [
+              103.83334815502167,
+              1.2689351687538803
+            ],
+            [
+              103.83365392684935,
+              1.2689432134075893
+            ],
+            [
+              103.8336405158043,
+              1.2694956129019561
+            ],
+            [
+              103.83305847644806,
+              1.2694848866993007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "special": "forcedArea",
+        "geomID": 28,
+        "viewColor": "#f2f2f2",
+        "height": 0,
+        "nameID": "site",
+        "visible": "",
+        "name": "DesignSite",
+        "SurfaceArea(m2)": 100000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.83245229721072,
+              1.2675729403662725
+            ],
+            [
+              103.83642196655276,
+              1.267594392787397
+            ],
+            [
+              103.83642196655276,
+              1.2716488971823907
+            ],
+            [
+              103.83236646652226,
+              1.2715201828549256
+            ],
+            [
+              103.83245229721072,
+              1.2675729403662725
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
+}

@@ -23,6 +23,7 @@
       "viewDistance",
       "geomID",
       "groupID",
+      "static",
       "nondeletable",
       "viewColor",
       "SurfaceShape",
@@ -1417,6 +1418,7 @@
           "name": "VivoCity",
           "height": 15,
           "nondeletable": "true",
+          "static":"true",
           "geomID": 32,
           "viewColor": "",
           "previewImgUrl": "http://www.mapletreecommercialtrust.com/~/media/Our%20Portfolio/Singapore/VivoCity/vivocity_front.jpg",
@@ -1543,6 +1545,7 @@
         "properties": {
           "height": 20,
           "name": "FurnitureBuilding",
+          "static":"true",
           "geomID": 33,
           "viewColor": "",
           "nondeletable": "true",
@@ -1593,6 +1596,7 @@
         "properties": {
           "height": 10,
           "name": "Terminal Engineering",
+          "static":"true",
           "geomID": 34,
           "viewColor": "",
           "nondeletable": "true",
@@ -1631,6 +1635,7 @@
         "properties": {
           "geomID": 35,
           "name": "Terminal Engineering Office",
+          "static":"true",
           "height": 20,
           "nondeletable": "true",
           "Level": "",
@@ -1669,6 +1674,7 @@
         "properties": {
           "height": 8,
           "name": "Empire Complex PSA(Office)",
+          "static":"true",
           "viewColor": "",
           "geomID": 36,
           "nondeletable": "true",
@@ -1706,6 +1712,7 @@
         "type": "Feature",
         "properties": {
           "name": "Distripark(Commercial)",
+          "static":"true",
           "height": 8,
           "geomID": 37,
           "viewColor": "",
@@ -1746,6 +1753,7 @@
         "properties": {
           "height": 8,
           "name": "Distripark (Commercial)",
+          "static":"true",
           "geomID": 38,
           "nondeletable": "true",
           "nameID": "exbuilding"
@@ -1782,6 +1790,7 @@
         "type": "Feature",
         "properties": {
           "name": "TanjongPagar Complex",
+          "static":"true",
           "height": 9,
           "geomID": 39,
           "nondeletable": "true",
@@ -1819,6 +1828,7 @@
         "type": "Feature",
         "properties": {
           "name": "TanjongPagar Complex",
+          "static":"true",
           "height": 60,
           "geomID": 40,
           "special": "",
