@@ -8,13 +8,14 @@ import pdb
 import math
 from operator import itemgetter
 
-def layoutanalysis(url):
+def layoutanalysis(url_list):
 # s = [45,90,135]
     s = [15,30,45]
     # Prepare data of area and designdata
     # url = "https://qua-kit.ethz.ch/exercise/33/1686/geometry" # This is the geojson data to read as example
-    file = requests.get(url).text
-    b = json.loads(file)  # load: convert json --> python list
+    # file = requests.get(url).text
+    # b = json.loads(file)  # load: convert json --> python list
+    b = url_list
     polys_design = []
     site = [] # xmin,xmax,ymin,ymax
     for i, f in enumerate(b["geometry"]["features"]):
