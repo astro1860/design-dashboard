@@ -19,14 +19,13 @@ def index():
 
 # Testing Page: d3.js
 # http://localhost:5000/service?url=https://qua-kit.ethz.ch/exercise/33/3485/geometry
-
-@app.route("/test")
-def ppprint():
-    url = request.args.get('url')
-    f_o = json.dumps(layoutanalysis(url))
-    url_desc = url.replace('geometry', 'info')
-    desc_list = desc_getter(url_desc)['subInfoDescription']
-    return render_template("index.html", data=f_o, addr_design=url, desc=desc_list)  # data passed to a web page
+# @app.route("/test")
+# def ppprint():
+#     url = request.args.get('url')
+#     f_o = json.dumps(layoutanalysis(url))
+#     url_desc = url.replace('geometry', 'info')
+#     desc_list = desc_getter(url_desc)['subInfoDescription']
+#     return render_template("index.html", data=f_o, addr_design=url, desc=desc_list)  # data passed to a web page
 
 
 #
