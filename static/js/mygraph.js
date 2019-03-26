@@ -2,7 +2,9 @@
 
 ////var w = 200, h = 200, r = 100
 //console.log(data)
-f_data = JSON.parse(data)[0]["f_mixed"]
+f_data = JSON.parse(data)[0]["f_single"]
+f_data_mix = JSON.parse(data)[0]["f_mixed_only"]
+console.log("fmixeonly",f_data)
 energy_data = JSON.parse(data)[0]["energy_data"]
 console.log("energy",energy_data)
 //color = d3.scale.category20c();     //builtin range of colors
@@ -34,7 +36,7 @@ var margin = {
     left: 100
 };
 
-var w = 500 - margin.left - margin.right,
+var w = 400 - margin.left - margin.right,
     h = 200 - margin.top - margin.bottom;
 
 var svg = d3.select("#chart-02").append("svg")
@@ -187,6 +189,61 @@ console.log(pie(f_data))
     .attr("transform", "translate(" + legx + ", 0)")
     .style("font-size", "14px")
     .call(d3.legend);
+
+//graph for mixed:
+var width = 500,
+    height = 200,
+    radius = Math.min(width, height) / 2;
+
+//var color = d3.scale.ordinal()
+//    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+
+var svg = d3.select("#chart-05").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+     .data([f_data_mix])
+     .attr("transform", "translate(" + radius + "," + radius + ")")
+   // .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.freq; });
+
+var piefreq = f_data.map(a => a.freq);
+console.log(piefreq)
+
+var g = svg.selectAll(".arc")
+      .data(pie)
+      .enter().append("g")
+      .attr("class", "arc");
+
+console.log(pie(f_data))
+
+  g.append("path")
+      .attr("d", arc)
+      .attr("data-legend", function(d) { return d.data.name.slice(6); })
+      .attr("data-legend-pos", function(d, i) { return i; })
+      .style("fill", function(d) { return d.data.color; });
+      // .style("fill", function(d) { return color(d.data.name); });
+
+  g.append("text")
+      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+      .attr("dy", ".35em")
+      .style("text-anchor", "middle");
+
+  var padding = 40,
+    legx = radius + padding,
+    legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", "translate(" + legx + ", 0)")
+    .style("font-size", "14px")
+    .call(d3.legend);
+
 
 
 
