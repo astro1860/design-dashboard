@@ -56,8 +56,8 @@ def service_2():
     if request.method == "POST":
         print("POST DETECTED!")
         # geom = request.value.get('geometry') # get all the parameters
-        geom = request.get_json('url') # get the geometry in json format (if the previous line doesn't work)
-        #geom = request.args.get('url')
+        #geom = request.get_json('url') # get the geometry in json format (if the previous line doesn't work)
+        geom = request.args.get('url')
         print("POST DETECTED and url get!")
         #print(geom)
         geom_list = json.loads(geom)
