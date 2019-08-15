@@ -107,7 +107,7 @@ def layoutservice2(url):
             #print(p)
             polys_design_green.append({"function": p["name"], "footprint": int(p["footprint/m2"]), "length": int(p["length/m"])})
 
-        if 'special' not in p.keys() and(p["name"] == "walkway"):
+        if 'special' not in p.keys() and(p["name"] == "walkway "):
             #print(p)
             polys_design_walkway.append({"function": p["name"], "footprint": int(p["footprint/m2"]), "length": int(p["length/m"])})
 
@@ -458,7 +458,7 @@ def layoutservice2(url):
     # print("total roof area is (m2)", roof_surface)
     green_rate = green /1000000 *100
     road_rate = network_area/1000000 *100
-
+    print(green)
     #pdb.set_trace()
     # PV energy production in kWh
     energy_pv = roof_surface * 0.75 * 0.15 * 800 * 0.75

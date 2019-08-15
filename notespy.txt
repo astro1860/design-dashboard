@@ -1,0 +1,5 @@
+# NOTES ABOUT COMPUTATION
+
+* volume1com/volume2... indicates floor areas
+* please refer to layoutanalysis.py for s
+* every layer is the accumulated ones
