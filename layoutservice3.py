@@ -82,6 +82,7 @@ def layoutservice3(url):
     energy_data = [{"name":"Residential","value":res_energy,"color":ccode[0]},
                    {"name":"Office","value": off_energy,"color":ccode[1]},
                    {"name":"Commercial","value": com_energy,"color":ccode[2]}]
+    
 
     area_data = [{"name":"Residential","value":res_sqm,"color":ccode[0]},
                  {"name":"Office","value": off_sqm,"color":ccode[1]},
@@ -144,17 +145,23 @@ def layoutservice3(url):
     print("shading:{:.2%}".format(shadearea/st_all))
     print("void deck:{:.2%}".format(void/st_all))
     print("max solar panels:{:.2%}".format(roof_left/st_all))
-
+    scode = ["#c9e3da","#d7e3be","#f4d6a8","#f4bcab","#f4a3af"]	
     #final data 
     # data = [{"f_mixed": func_mix,"max_name":max_name,"f_percent": f_percent, "energy_data":energy_data,"area_data":area_data,
     #          "energy_demand":energy_demand,"gpr": gpr,"construction":construction,"floor_area":floor_area,"res_population":res_density,
     #           "total_volume":t_volume, "green_rate": green_rate, "road_rate": road_rate,"road_len": lanes, "energy_pv": energy_pv,
     #           "rooftree":rooftree,"shade":shade,"playground":play,"park":park}]
-    
+    st_data = [{"name":"Green facade","value":greenfacade/st_all*100,"color":scode[0]},
+                   {"name":"Street scape","value": greenstreet/st_all*100,"color":scode[1]},
+                   {"name":"Shading","value": shadearea/st_all*100,"color":scode[2]},
+                   {"name":"Void deck","value": void/st_all*100,"color":scode[3]},
+                   {"name":"Solar panels","value": roof_left/st_all*100,"color":scode[4]}]
+
+
     data = [{"f_mixed": func_mix,"f_single":func_single,"f_mixed_only":func_mix_only, "max_name":max_name,"f_percent": f_percent, "f_percent_single":f_percent_single, "f_percent_mix":f_percent_mix,"energy_data":energy_data,"area_data":area_data,
              "energy_demand":energy_demand,"gpr": gpr,"construction":construction,"floor_area":floor_area,"res_population":res_density,
-              "total_volume":t_volume, "green_rate": green_rate, "road_rate": road_rate,"road_len": lanes, "energy_pv": energy_pv,
-              "s1":greenfacade/st_all,"s2":greenstreet/st_all,"s3":shadearea/st_all,"s4":void/st_all,"s5":roof_left/st_all,"rooftree":rooftree,"shade":shade,"playground":play,"park":park}]
+             "strategy":st_data,"total_volume":t_volume, "green_rate": green_rate, "road_rate": road_rate,"road_len": lanes, "energy_pv": energy_pv,
+             "s1":greenfacade/st_all,"s2":greenstreet/st_all,"s3":shadearea/st_all,"s4":void/st_all,"s5":roof_left/st_all,"rooftree":rooftree,"shade":shade,"playground":play,"park":park}]
     
     print(data)    
     

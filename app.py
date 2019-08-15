@@ -39,6 +39,34 @@ def ppprint():
     return render_template("index_chi.html", data=f_o, addr_design=url, desc=desc_list)  # data passed to a web page
     #return render_template("index_s1.html", data=f_o)  # data passed to a web page
 
+@app.route("/service_3", methods=['GET','POST'])
+def service_3():
+    if request.method == "POST":
+        print("POST DETECTED!")
+        # geom = request.value.get('geometry') # get all the parameters
+        #geom = request.get_json('url') # get the geometry in json format (if the previous line doesn't work)
+        geom = request.args.get('url')
+        print("POST DETECTED and url get!")
+        print(geom)
+        geom_list = json.loads(geom)
+        f_o = json.dumps(layoutservice3(geom_list))
+        return render_template("index_chi.html", data=f_o)  # data passed to a web page
+
+
+    elif request.method == "GET":
+        url = request.args.get('url')
+        print("GET detected!")
+        print(url)
+        file = requests.get(url).text
+        print(file)
+        b = json.loads(file)  # load: convert json --> python list
+        f_o = json.dumps(layoutservice3(b))
+        url_desc = url.replace('geometry', 'info')
+        desc_list = desc_getter(url_desc)['subInfoDescription']
+        return render_template("index_chi.html", data=f_o, addr_design=url, desc=desc_list)  # data passed to a web page
+
+
+
 @app.route("/service_1")
 def service1():
     url = request.args.get('url')
