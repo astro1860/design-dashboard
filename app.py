@@ -10,8 +10,11 @@ from desc_getter import desc_getter
 import requests
 import pdb
 # Variables
+# Variables
 
 app = Flask(__name__)
+#app.config.update(MAX_CONTENT_LENGTH=20971520)
+app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024
 
 # Main Page
 @app.route("/")
