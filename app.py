@@ -6,6 +6,7 @@ import json
 from layoutanalysis import layoutanalysis
 from layoutservice2 import layoutservice2
 from layoutservice3 import layoutservice3
+from layoutservice_cube import layoutservice_cube
 from desc_getter import desc_getter
 import requests
 import pdb
@@ -41,6 +42,27 @@ def ppprint():
     desc_list = desc_getter(url_desc)['subInfoDescription']
     return render_template("index_chi.html", data=f_o, addr_design=url, desc=desc_list)  # data passed to a web page
     #return render_template("index_s1.html", data=f_o)  # data passed to a web page
+
+@app.route("/service_cube", methods=['GET','POST'])
+def cube():
+    if request.method == "POST":
+        print("POST DETECTED!")
+        geom = request.form.get('geometry')
+        geom_list = json.loads(geom)
+        f_o = json.dumps(layoutservice_cube(geom_list))
+        return render_template("index_cube.html", data=f_o)  # data passed to a web page
+    
+    elif request.method == "GET":
+        url = request.args.get('url')
+        print("GET detected!")
+        #print(url)
+        file = requests.get(url).text
+        # print(file)
+        b = json.loads(file)
+        f_o = json.dumps(layoutservice_cube(b))
+        return render_template("index_cube.html", data=f_o, addr_design=url)  # data passed to a web page
+
+
 
 @app.route("/service_3", methods=['GET','POST'])
 def service_3():

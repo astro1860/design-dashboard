@@ -11,10 +11,6 @@ from building import building
 from polycal import polycal
 # this is only for test
 
-with open('/Users/luha/Projects/payalebar/data/chi_design/testfiles/chi_static_add_1.json') as testfile:    
-    url = json.load(testfile)
-
-
 def layoutservice3(url):
     # url = "https://qua-kit.ethz.ch/exercise/36/3353/geometry" # This is the geojson data to read as example
     # file = requests.get(url).text
