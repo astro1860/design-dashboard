@@ -33,7 +33,7 @@ def layoutservice_cube(url):
         
         #1.residential
         if 'special' not in p.keys() and(p["nameID"].split('_')[0] == "res"):
-            res += int(p["footprint/m2"]) * 6 
+            res += int(p["footprint/m2"]) * 8
         
         #2.mixed
         if 'special' not in p.keys() and(p["nameID"].split('_')[0] == "mixed"):
